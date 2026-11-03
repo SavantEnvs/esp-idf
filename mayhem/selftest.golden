@@ -1,0 +1,18 @@
+http: consumed=84 method=POST url=/api/v1/nvs?key=a headers=3 body=hello complete=1 major=1 minor=1 errno=HPE_OK
+http-bad: errno=HPE_STRICT
+http-url: rc=0 port=8080 host=example.com path=/p/a query=q=1
+json: kty=EC crv=P-256 x=hello missing=1
+json-tree-bytes=108
+json-bad: rejected
+ie: parse=0 count=4 rsn_len=4
+ie-get: ssid_len=4 ssid=esp! ds=6 missing=1
+ie-vendor: found=1 len=7
+ie-concat: len=3
+ie-truncated: parse=0
+wps: rc=0 version=0x10 msg_type=4 uuid_e0=1
+wps-truncated: rc=-1
+nvs-init: err=0 valid=1
+nvs-write: err=0 ns=1
+nvs-reopen: init=0 ns=0 same_ns=1 u32=0xc0ffee i16=-1234 str=hello nvs blobsum=24356 errs=0000
+nvs-missing: err=0x1102
+nvs-stats: used=14 namespaces=1

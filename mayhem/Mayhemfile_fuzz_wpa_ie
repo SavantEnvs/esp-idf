@@ -1,0 +1,9 @@
+project: savantenvs/esp-idf
+target: fuzz_wpa_ie
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_wpa_ie/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_wpa_ie
+    libfuzzer: true
+    timeout: 10
