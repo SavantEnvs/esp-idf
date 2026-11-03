@@ -1,0 +1,9 @@
+project: savantenvs/esp-idf
+target: fuzz_nvs
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_nvs/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_nvs
+    libfuzzer: true
+    timeout: 10

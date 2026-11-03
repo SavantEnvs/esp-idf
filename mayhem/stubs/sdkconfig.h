@@ -1,0 +1,5 @@
+#pragma once
+#define CONFIG_IDF_TARGET "linux"
+#define CONFIG_IDF_TARGET_LINUX 1
+#define CONFIG_LOG_DEFAULT_LEVEL 3
+#define CONFIG_LOG_DEFAULT_LEVEL_INFO 1
